@@ -7,13 +7,13 @@
 Install the package using npm:
 
 ```bash
-npm install use-is-open
+npm install useisopen
 ```
 
 Or with yarn:
 
 ```bash
-yarn add use-is-open
+yarn add useisopen
 ```
 
 # Usage:
