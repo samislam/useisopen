@@ -16,17 +16,17 @@ function useIsOpen<O = unknown, C = unknown, MO = unknown, MC = unknown>(
 
   const open = (arg: O) => {
     setState(openIndicator)
-    restConfig.open?.(arg)
+    return restConfig.open?.(arg)
   }
   const close = (arg: C) => {
     setState(closeIndicator)
-    restConfig.close?.(arg)
+    return restConfig.close?.(arg)
   }
   const manualOpen = (arg: MO) => {
-    restConfig.manualOpen?.(stateToolkit, arg)
+    return restConfig.manualOpen?.(stateToolkit, arg)
   }
   const manualClose = (arg: MC) => {
-    restConfig.manualClose?.(stateToolkit, arg)
+    return restConfig.manualClose?.(stateToolkit, arg)
   }
 
   return [state, { open, close, manualOpen, manualClose }] as ReturnType<

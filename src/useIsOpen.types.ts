@@ -2,10 +2,10 @@ export interface Config<O, C, MO, MC> {
   initialState?: any
   openIndicator?: any
   closeIndicator?: any
-  open?: (arg: O) => void
-  close?: (arg: C) => void
-  manualOpen?: (stateToolkit: StateToolkit, arg: MO) => void
-  manualClose?: (stateToolkit: StateToolkit, arg: MC) => void
+  open?: (arg: O) => any
+  close?: (arg: C) => any
+  manualOpen?: (stateToolkit: StateToolkit, arg: MO) => any
+  manualClose?: (stateToolkit: StateToolkit, arg: MC) => any
 }
 
 export type StateToolkit = [
@@ -15,10 +15,10 @@ export type StateToolkit = [
 ]
 
 export interface ReturnObject<O, C, MO, MC> {
-  open: (arg?: O) => void
-  close: (arg?: C) => void
-  manualOpen: (arg?: MO) => void
-  manualClose: (arg?: MC) => void
+  open: (arg?: O) => any
+  close: (arg?: C) => any
+  manualOpen: (arg?: MO) => any
+  manualClose: (arg?: MC) => any
 }
 
 export type ReturnType<S, O, C, MO, MC> = [S, ReturnObject<O, C, MO, MC>]
