@@ -1,6 +1,6 @@
 {
   "name": "useisopen",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "useIsOpen is a react hook for managing open and close states, designed to simplify the management of open/close states",
   "main": "./dist/index.js",
   "type": "commonjs",
